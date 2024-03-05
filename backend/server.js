@@ -40,9 +40,9 @@ io.on('connection', (socket) => {
 });
 
 
-// app.get("/", (req, res) => {
-//   res.send("gett");
-// });
+app.get("/", (req, res) => {
+  res.send("gett");
+});
 
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
