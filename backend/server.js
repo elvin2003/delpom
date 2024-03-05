@@ -4,6 +4,13 @@ const http = require('http');
 const cors = require('cors');
 const { Server } = require("socket.io")
 
+// https://delpom-front.vercel.app  FRONT
+// https://delpom.vercel.app/  BACK
+
+FRONT_URL = "https://delpom-front.vercel.app";
+BACK_URL = "https://delpom.vercel.app/";
+
+
 dotenv.config();
 
 const PORT = process.env.PORT || 5000;
@@ -15,7 +22,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://127.0.0.1:5173",
+    origin: FRONT_URL,
     methods: ["GET", "POST"],
   }
 })

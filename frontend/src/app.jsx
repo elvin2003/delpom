@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'preact/hooks'
 import io from 'socket.io-client';
-const socket = io("http://localhost:5000");
+
+FRONT_URL = "https://delpom-front.vercel.app";
+BACK_URL = "https://delpom.vercel.app/";
+
+const socket = io(BACK_URL);
+
 
 export function App() {
   const [messages, setMessages] = useState([]);
