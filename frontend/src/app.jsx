@@ -6,7 +6,6 @@ const BACK_URL = "https://delpom.vercel.app/";
 
 const socket = io(BACK_URL);
 
-
 export function App() {
   const [messages, setMessages] = useState([]);
   const [messageInput, setMessageInput] = useState('');
