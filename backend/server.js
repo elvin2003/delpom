@@ -5,10 +5,13 @@ const cors = require('cors');
 const { Server } = require("socket.io")
 
 // https://delpom-front.vercel.app  FRONT
-// https://delpom.vercel.app/  BACK
+// https://delpom.vercel.app/  BACK https://delpom-back.onrender.com/
+
+
 
 FRONT_URL = "https://delpom-front.vercel.app";
 BACK_URL = "https://delpom.vercel.app/";
+
 
 dotenv.config();
 
