@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 const FRONT_URL = "https://delpom-front.vercel.app";
 const BACK_URL = "https://delpom.vercel.app/";
 
-const socket = io("https://delpom.vercel.app/");
+const socket = io("https://delpom-back.vercel.app/");
 
 export function App() {
   const [messages, setMessages] = useState([]);
