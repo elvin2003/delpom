@@ -10,7 +10,8 @@ dns.setDefaultResultOrder('verbatim')
 export default defineConfig({
   plugins: [preact()],
   server: {
-    host: 'localhost',
-    port: 3000
+    host: true,
+    strictPort: true,
+    port: 3000,
   }
 })
